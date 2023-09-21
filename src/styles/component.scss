@@ -1,3 +1,14 @@
 .footer {
     text-align: center;
 }
+.sidebar {
+    background: #f0f0f0;
+    width: 500px;
+    height: 100%;
+
+    .menu {
+        background: #f0f0f0;
+        height: 100vh;
+        padding: 10px;
+    }
+}

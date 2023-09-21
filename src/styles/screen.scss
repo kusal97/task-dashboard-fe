@@ -1,7 +1,12 @@
 .main-layout {
     min-height: 100vh;
 
-    .content-wrapper {
-        margin: 15px;
+    .content-main-wrapper {
+            margin: 15px;
+        .content-wrapper {
+            padding: 24px;
+                min-height: 100%;
+                background: white;
+            }
     }
 }

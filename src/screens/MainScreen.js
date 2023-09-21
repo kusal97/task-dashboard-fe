@@ -4,13 +4,13 @@ import AppFooter from "../components/Footer";
 import SideBar from "../components/SideBar";
 const { Content } = Layout;
 
-const Main = () => {
+const MainScreen = ({ children }) => {
   return (
     <Layout className="main-layout">
       <SideBar />
       <Layout>
-        <Content className="content-wrapper">
-          <div></div>
+        <Content className="content-main-wrapper">
+          <div className="content-wrapper">{children}</div>
         </Content>
         <AppFooter />
       </Layout>
@@ -18,4 +18,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default MainScreen;
