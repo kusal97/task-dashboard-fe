@@ -1,10 +1,9 @@
-import './App.css';
+import Main from './screens/Main';
+import "./styles/app.scss";
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <Main/>
   );
 }
 
