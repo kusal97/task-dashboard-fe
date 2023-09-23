@@ -1,6 +1,7 @@
 .footer {
     text-align: center;
 }
+
 .sidebar {
     background: #f0f0f0;
     width: 500px;
@@ -11,4 +12,10 @@
         height: 100vh;
         padding: 10px;
     }
+}
+.task-form {
+    padding: 40px;
+    background: #f0f0f0;
+    height: 70vh;
+    border-radius: 20px;
 }
