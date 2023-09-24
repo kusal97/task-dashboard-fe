@@ -1,21 +1,126 @@
 .footer {
-    text-align: center;
+  text-align: center;
 }
 
 .sidebar {
-    background: #f0f0f0;
-    width: 500px;
-    height: 100%;
+  background: #f0f0f0;
+  width: 500px;
+  height: 100%;
+  font-weight: bold;
 
-    .menu {
-        background: #f0f0f0;
-        height: 100vh;
-        padding: 10px;
-    }
-}
-.task-form {
-    padding: 40px;
+  .menu {
     background: #f0f0f0;
-    height: 70vh;
-    border-radius: 20px;
+    height: 100vh;
+    padding: 10px;
+  }
+}
+
+.task-form {
+  padding: 40px;
+  background: #f0f0f0;
+  height: 70vh;
+  border-radius: 20px;
+}
+
+.task {
+  background: white;
+  height: 20vh;
+  border-radius: 20px;
+  padding: 10px;
+  width: 25vw;
+  margin-top: 10px;
+
+  .main-row {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 9vh;
+  }
+
+  .secondary-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    .priority {
+      display: flex;
+      flex-direction: row;
+      font-weight: bold;
+      flex-direction: row;
+      margin-left: 10px;
+
+      .priority-icon {
+        margin-right: 10px;
+      }
+    }
+
+    .ticket-number {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  }
+}
+
+.status-layer {
+  display: flex;
+  flex-direction: row;
+  margin: -15px;
+  margin-right: 5px;
+
+  .captured {
+    background: #f9f9f9;
+    height: 100vh;
+    font-weight: bold;
+
+    .captured-title {
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+
+    .captured-tickets {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+  }
+
+  .in-progress {
+    background: #f9f9f9;
+    height: 100vh;
+    margin-left: 10px;
+    font-weight: bold;
+
+    .in-progress-title {
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+
+    .in-progress-tickets {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+  }
+
+  .done {
+    background: #f9f9f9;
+    height: 100vh;
+    margin-left: 10px;
+    font-weight: bold;
+
+    .done-title {
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+
+    .done-tickets {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+  }
 }

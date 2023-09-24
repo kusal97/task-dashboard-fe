@@ -1,7 +1,8 @@
 import React from "react";
+import StatusLayer from "../components/StatusLayer";
 
 const ManageTasks = () => {
-  return <div>ManageTasks</div>;
+  return <StatusLayer />;
 };
 
 export default ManageTasks;

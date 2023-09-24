@@ -32,8 +32,13 @@ const TaskForm = () => {
   const [status, setStatus] = useState("Captured");
 
   const onChangePriority = ({ target: { value } }) => {
-    console.log("radio4 checked", value);
+    console.log("Priority checked", value);
     setPriority(value);
+  };
+
+  const onChangeStatus = ({ target: { value } }) => {
+    console.log("Status checked", value);
+    setStatus(value);
   };
 
   return (
@@ -78,6 +83,7 @@ const TaskForm = () => {
           rules={[{ required: true }]}
         >
           <Radio.Group
+            onChange={onChangeStatus}
             options={optionsWithStatus}
             value={status}
             optionType="button"
