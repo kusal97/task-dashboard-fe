@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Row, Col } from "antd";
-import { tickets } from "../constants/constants";
 import Task from "./Task";
 
 const StatusLayer = () => {
+  const [tickets, setTickets] = useState([]);
+
+  useEffect(() => {
+    fetch(`http://localhost:9090/api/task`, {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    }).then((response) => {
+      if (response.ok) {
+        response.json().then((json) => {
+          setTickets(json);
+        });
+      }
+    });
+  }, []);
+
   return (
     <div className="status-layer">
       <Col span={8} className="captured">
@@ -12,7 +29,7 @@ const StatusLayer = () => {
           {tickets.map((ticketData, indexed) => {
             return (
               <div>
-                {ticketData.status === "captured" && (
+                {ticketData.status === "Captured" && (
                   <Task ticket={ticketData} />
                 )}
               </div>
@@ -26,7 +43,7 @@ const StatusLayer = () => {
           {tickets.map((ticketData, indexed) => {
             return (
               <div>
-                {ticketData.status === "in-progress" && (
+                {ticketData.status === "In-progress" && (
                   <Task ticket={ticketData} />
                 )}
               </div>
@@ -40,7 +57,7 @@ const StatusLayer = () => {
           {tickets.map((ticketData, indexed) => {
             return (
               <div>
-                {ticketData.status === "done" && <Task ticket={ticketData} />}
+                {ticketData.status === "Done" && <Task ticket={ticketData} />}
               </div>
             );
           })}

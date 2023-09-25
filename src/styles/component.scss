@@ -15,6 +15,11 @@
   }
 }
 
+.content-wrapper {
+  height: auto;
+  margin-bottom: 20px;
+}
+
 .task-form {
   padding: 40px;
   background: #f0f0f0;
@@ -122,5 +127,34 @@
       align-items: center;
       margin-top: 10px;
     }
+  }
+}
+
+.edit-modal {
+  margin-left: 35vw;
+}
+
+.modal-body {
+  height: 400px;
+
+  .edit-title {
+    font-weight: bold;
+    margin-top: 40px;
+    font-size: x-large;
+  }
+
+  .edit-description {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .edit-priority {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .edit-status {
+    margin-top: 20px;
+    margin-left: 10px;
   }
 }

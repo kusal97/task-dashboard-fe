@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Form, Input, Radio } from "antd";
+import { createTask } from "../services/taskService";
 
 const optionsWithPriority = [
   { label: "High", value: "High" },
@@ -21,10 +22,12 @@ const layout = {
 const validateMessages = {
   required: "${label} is required!",
 };
-/* eslint-enable no-template-curly-in-string */
 
-const onFinish = (values) => {
-  console.log(values);
+const onFinish = async (values) => {
+  values["user_id"] = 1;
+
+  createTask(JSON.stringify(values));
+  alert("Task added successfully !");
 };
 
 const TaskForm = () => {
@@ -51,21 +54,21 @@ const TaskForm = () => {
         validateMessages={validateMessages}
       >
         <Form.Item
-          name={["user", "title"]}
+          name={["summary"]}
           label="Title"
           rules={[{ required: true }]}
         >
           <Input />
         </Form.Item>
         <Form.Item
-          name={["user", "email"]}
+          name={["description"]}
           label="Description"
           rules={[{ required: true }]}
         >
           <Input.TextArea />
         </Form.Item>
         <Form.Item
-          name={["user", "priority"]}
+          name={["priority"]}
           label="Priority"
           rules={[{ required: true }]}
         >
@@ -78,7 +81,7 @@ const TaskForm = () => {
           />
         </Form.Item>
         <Form.Item
-          name={["user", "status"]}
+          name={["status"]}
           label="Status"
           rules={[{ required: true }]}
         >

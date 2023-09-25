@@ -7,39 +7,55 @@ export const tickets = [
   {
     task_id: "1",
     title: "Search for the keywords to learn more about each warning 1",
+    description:
+      "Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1",
     priority: "High",
-    status: "captured",
+    status: "Captured",
   },
   {
     task_id: "2",
     title: "Unexpected template string expression ",
+    description:
+      "Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1",
     priority: "Low",
-    status: "in-progress",
+    status: "In-progress",
   },
   {
     task_id: "3",
     title: "Search for the keywords to learn more about each warning 2",
+    description:
+      "Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1",
+
     priority: "Medium",
-    status: "done",
+    status: "Done",
   },
 
   {
-    task_id: "1",
+    task_id: "4",
     title: "Search for the keywords to learn more about each warning 1",
+    description:
+      "Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1",
+
     priority: "High",
-    status: "captured",
+    status: "Captured",
   },
   {
-    task_id: "2",
+    task_id: "5",
     title: "Unexpected template string expression ",
+    description:
+      "Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1",
+
     priority: "Low",
-    status: "done",
+    status: "Done",
   },
   {
-    task_id: "3",
+    task_id: "6",
     title: "Search for the keywords to learn more about each warning 2",
+    description:
+      "Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1Search for the keywords to learn more about each warning 1",
+
     priority: "Medium",
-    status: "captured",
+    status: "Captured",
   },
 ];
 
