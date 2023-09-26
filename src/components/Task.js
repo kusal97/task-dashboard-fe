@@ -16,7 +16,6 @@ const Task = (props) => {
 
   const handleOk = () => {
     setIsModalOpen(false);
-    console.log({ isModalOpen });
   };
 
   const handleCancel = () => {
@@ -48,7 +47,6 @@ const Task = (props) => {
           title="Edit Task"
           open={isModalOpen}
           onOk={handleOk}
-          okText="Save"
           onCancel={handleCancel}
         >
           <EditModal ticketData={props.ticket} />

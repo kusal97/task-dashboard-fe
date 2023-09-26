@@ -25,7 +25,6 @@ const validateMessages = {
 
 const onFinish = async (values) => {
   values["user_id"] = 1;
-
   createTask(JSON.stringify(values));
   alert("Task added successfully !");
 };

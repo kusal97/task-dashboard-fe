@@ -1,15 +1,3 @@
-export async function getTasks() {
-  return await fetch(`http://localhost:9090/api/task`, {
-    method: "GET",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-  }).then((response) => {
-    return response;
-  });
-}
-
 export async function createTask(taskData) {
   return await fetch(`http://localhost:9090/api/task`, {
     method: "POST",
@@ -18,5 +6,18 @@ export async function createTask(taskData) {
       "Content-Type": "application/json",
     },
     body: taskData,
+  });
+}
+
+export async function updateTasks(taskData, id) {
+  return await fetch(`http://localhost:9090/api/task/` + id, {
+    method: "PUT",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: taskData,
+  }).then((response) => {
+    return response;
   });
 }
